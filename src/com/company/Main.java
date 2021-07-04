@@ -15,7 +15,9 @@ public class Main {
         //コンソールで入力された値をlineで受け取る
         int play = scan.nextInt();
 
-        String py = "";
+        //ユーザーに入力した手を表示させるためpyへ代入
+        //空文字をいれなくとも今回は宣言だけすればいいので省略、cpも同じ変更を行う
+        String py;
         switch (play) {
             case 0:
                 py = "グー";
@@ -23,7 +25,6 @@ public class Main {
             case 1:
                 py = "チョキ";
                 break;
-
             default:
                 py = "パー";
                 break;
@@ -37,7 +38,8 @@ public class Main {
         //0から2の範囲まで乱数が代入される
         int comp = rand.nextInt(3);
 
-        String cp = "";
+        //ユーザーにコンピューターの手を表示させるためcpへ代入
+        String cp;
         switch (comp) {
             case 0:
                 cp = "グー";
