@@ -12,7 +12,7 @@ public class Main {
         //ScannerをSystem.inで初期化
         Scanner scan = new Scanner(System.in);
 
-        //コンソールで入力された値をlineで受け取る
+        //コンソールで入力された値をplayで受け取る
         int play = scan.nextInt();
 
         //ユーザーに入力した手を表示させるためpyへ代入
