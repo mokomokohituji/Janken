@@ -17,7 +17,7 @@ public class Main {
 
         //ユーザーに入力した手を表示させるためpyへ代入
         //空文字をいれなくとも今回は宣言だけすればいいので省略、cpも同じ変更を行う
-        String py = playComparison(play);
+        String py = Comparison.playComparison(play);
 
         System.out.println("あなたの手は" + py + "です");
 
@@ -28,7 +28,7 @@ public class Main {
         int comp = rand.nextInt(3);
 
         //ユーザーにコンピューターの手を表示させるためcpへ代入
-        String cp = compComparison(comp);
+        String cp = Comparison.compComparison(comp);
 
         System.out.println("コンピュータの手は" + cp + "です");
 
@@ -47,39 +47,6 @@ public class Main {
         }else  {
             System.out.println("あなたの勝ちです");
         }
-    }
-
-    public static String playComparison(int play){
-        String py;
-        switch (play) {
-            case 0:
-                py = "グー";
-                break;
-            case 1:
-                py = "チョキ";
-                break;
-            default:
-                py = "パー";
-                break;
-        }
-        return py;
-    }
-
-    public static String compComparison(int comp){
-        String cp;
-        switch (comp) {
-            case 0:
-                cp = "グー";
-                break;
-            case 1:
-                cp = "チョキ";
-                break;
-
-            default:
-                cp = "パー";
-                break;
-        }
-        return cp;
     }
 }
 
