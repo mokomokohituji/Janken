@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        Comparison comparisonPlay = new Comparison();
+        Comparison comparisonComp = new Comparison();
         //グーは0、チョキは1、パーは2
         System.out.println("グーは0、チョキは1、パーは2で入力してください");
 
@@ -17,7 +19,7 @@ public class Main {
 
         //ユーザーに入力した手を表示させるためpyへ代入
         //空文字をいれなくとも今回は宣言だけすればいいので省略、cpも同じ変更を行う
-        String py = Comparison.playComparison(play);
+        String py = comparisonPlay.playComparison(play);
 
         System.out.println("あなたの手は" + py + "です");
 
@@ -28,7 +30,7 @@ public class Main {
         int comp = rand.nextInt(3);
 
         //ユーザーにコンピューターの手を表示させるためcpへ代入
-        String cp = Comparison.compComparison(comp);
+        String cp = comparisonComp.playComparison(comp);
 
         System.out.println("コンピュータの手は" + cp + "です");
 

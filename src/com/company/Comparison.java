@@ -1,6 +1,6 @@
 package com.company;
 
-public class Comparison {
+class Comparison {
     public static String playComparison(int play){
         String py;
         switch (play) {
@@ -15,22 +15,5 @@ public class Comparison {
                 break;
         }
         return py;
-    }
-
-    public static String compComparison(int comp){
-        String cp;
-        switch (comp) {
-            case 0:
-                cp = "グー";
-                break;
-            case 1:
-                cp = "チョキ";
-                break;
-
-            default:
-                cp = "パー";
-                break;
-        }
-        return cp;
     }
 }
